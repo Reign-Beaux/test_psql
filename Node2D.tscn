@@ -1,0 +1,54 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://SelectFromDB.gd" type="Script" id=1]
+
+[node name="Node2D" type="Node2D"]
+script = ExtResource( 1 )
+
+[node name="Button" type="Button" parent="."]
+anchor_left = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = 9.0
+margin_top = 48.0
+margin_right = 219.0
+margin_bottom = 86.0
+text = "Save"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Button2" type="Button" parent="."]
+margin_left = 18.0
+margin_top = 117.0
+margin_right = 215.0
+margin_bottom = 155.0
+text = "Consultar"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Button3" type="Button" parent="."]
+margin_left = 20.0
+margin_top = 183.0
+margin_right = 224.0
+margin_bottom = 220.0
+text = "Actualizar"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Button4" type="Button" parent="."]
+margin_left = 24.0
+margin_top = 237.0
+margin_right = 217.0
+margin_bottom = 269.0
+text = "Eliminar"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[connection signal="button_up" from="Button" to="." method="_on_Button_button_up"]
+[connection signal="button_up" from="Button2" to="." method="_on_Button2_button_up"]
+[connection signal="button_up" from="Button3" to="." method="_on_Button3_button_up"]
+[connection signal="button_up" from="Button4" to="." method="_on_Button4_button_up"]
